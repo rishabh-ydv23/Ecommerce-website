@@ -1,0 +1,39 @@
+@import "variables";
+
+::selection {
+  color: $White;
+  background-color: $PrimaryColor;
+}
+
+body {
+  font-family: "Prompt", sans-serif;
+  background-color: $White;
+  overflow-x: hidden;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+* {
+  color: $Black;
+}
+
+.container {
+  width: 100vw;
+  padding: 0 4rem;
+
+  @media screen and (max-width: 780px) {
+    padding: 0 2rem;
+  }
+
+  @media screen and (max-width: 425px) {
+    padding: 0 1rem;
+  }
+}
+
+.content {
+  margin-top: 5.5rem;
+}
